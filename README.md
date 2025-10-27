@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=20232A&height=150&section=header&text=Heet%20Patel%20%7C%20Cloud%20&%20DevOps%20Engineer&fontSize=40&fontColor=FFFFFF" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=jelly&color=336699&height=180&section=header&text=Cloud%20&%20DevOps%20Project%20Hub&fontSize=45&fontColor=FFFFFF&animation=fadeIn" alt="Header Banner"/>
 </p>
 
 <p align="center">
