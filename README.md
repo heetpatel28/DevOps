@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=jelly&color=336699&height=180&section=header&text=Cloud%20&%20DevOps%20Project%20Hub&fontSize=45&fontColor=FFFFFF&animation=fadeIn" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&height=160&section=header&text=DevOps%20Learning%20Lab&fontSize=50&fontColor=FFFFFF" alt="Header Banner"/>
 </p>
 
 <p align="center">
-Welcome to my little corner on GitHub! Here I share my personal journey as I learn DevOps and Cloud Computing. You’ll find my notes, code samples, project files, and useful commands—all neatly organized and updated as I keep learning and improving.
+A curated collection of my work and learnings in DevOps and Cloud Computing. This hub contains practical notes, automation scripts, project configurations, and command-line references for tools like AWS, Docker, and Kubernetes, all organized for continuous improvement.
 </p>
 
 ---
@@ -45,7 +45,6 @@ This repository is organized by topic for easy navigation. Below is a guide to w
 
 | Icon | Directory | Description |
 |:---:|---|---|
-| 🗓️ | [**KodeKloud**](./KodeKloud) | Daily progress and key takeaways from the KodeKloud challenge. |
 | ☁️ | [**AWS**](./AWS) | A collection of notes on core Amazon Web Services (AWS) concepts, services, and best practices. |
 | ⚙️ | [**Ansible**](./Ansible/Practice) | Hands-on Ansible playbooks and practice files for configuration management and automation. |
 | ⌨️ | [**DevOps Commands**](./DevOps%20Commands) | A quick-reference cheat sheet for essential commands across various DevOps tools. |
@@ -61,17 +60,6 @@ This repository is organized by topic for easy navigation. Below is a guide to w
 
 ---
 
-### 🚀 Project Showcase
-
-<p align="center">
-  Here are a few visual examples from projects you can find in this repository.
-</p>
-
-" comment lines around the sections below to make them visible.
-  4. Change the 'src' path to match your new image file.
--->
-
----
 
 ## 🌱 How to Use This Repository
 
