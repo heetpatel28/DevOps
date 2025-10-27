@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFFFFF&height=200&section=header&text=My%20DevOps%20and%20Cloud%20Journey%20🎯&fontSize=50&fontColor=4584b6" alt="Header Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=slice&color=gradient&height=160&section=header&text=DevOps%20Learning%20Lab&fontSize=50&fontColor=FFFFFF" alt="Header Banner"/>
 </p>
 
 <p align="center">
