@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant | Flask App 🚀</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(160deg, #0C0D16, #1A1C2B);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Flex container for profile + content */
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1050px;
+            width: 100%;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Left side: profile photo */
+        .profile-photo {
+            flex: 0 0 200px;
+            margin-right: 30px;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            border-radius: 50%;
+            border: 3px solid #5599FF;
+            box-shadow: 0 4px 15px rgba(85, 153, 255, 0.5);
+        }
+
+        /* Right side: content */
+        .content {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #5599FF;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .about {
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .about h2 {
+            font-size: 1.3rem;
+            color: #5599FF;
+            margin-bottom: 8px;
+        }
+
+        .about p {
+            font-size: 0.95rem;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .messages {
+            margin-bottom: 15px;
+            padding: 12px;
+            background: rgba(85, 153, 255, 0.08);
+            border: 1px solid rgba(85, 153, 255, 0.2);
+            border-radius: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            text-align: left;
+        }
+
+        .messages p {
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(85, 153, 255, 0.3);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        input[type="text"]:focus {
+            border-color: #5599FF;
+            box-shadow: 0 0 12px rgba(85, 153, 255, 0.6);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background: #5599FF;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #417ad6;
+            box-shadow: 0 0 15px rgba(85, 153, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-photo {
+                margin-right: 0;
+                margin-bottom: 20px;
+                flex: 0 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Profile photo -->
+        <div class="profile-photo">
+            <img src="1.png" alt="Prashant Photo">
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="header">
+                <h1>Prashant Gohil | DevOps Enthusiast</h1>
+                <p>Student | Aspiring Cloud & DevOps Engineer</p>
+            </div>
+
+            <div class="about">
+                <h2>About Me</h2>
+                <p>Hi, I'm <b>Prashant</b> 👋, a student and aspiring Cloud & DevOps engineer.</p>
+                <p style="margin-top:10px;">
+                    <b>Project:</b> I have deployed a 2-tier Flask application (Flask + MySQL) on AWS EC2 using Docker.  
+                    I used Docker Compose to manage both containers with volumes and a custom network.  
+                    The source code is hosted on GitHub, and Jenkins is integrated to set up a CI/CD pipeline for automated deployment.
+                </p>
+            </div>
+
+            <div class="messages">
+                {% for message in messages %}
+                    <p>{{ message[0] }}</p>
+                {% endfor %}
+            </div>
+
+            <form id="messageForm">
+                <input type="text" name="new_message" placeholder="Type your message..." required>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#messageForm").on("submit", function(event) {
+                event.preventDefault();
+                let messageInput = $("input[name='new_message']");
+                let message = messageInput.val().trim();
+
+                if (message === "") {
+                    alert("Message cannot be empty!");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/submit",
+                    type: "POST",
+                    data: { new_message: message },
+                    success: function(response) {
+                        if (response && response.message) {
+                            $(".messages").append("<p>" + response.message + "</p>");
+                            messageInput.val("");
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error("AJAX Error:", status, error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
