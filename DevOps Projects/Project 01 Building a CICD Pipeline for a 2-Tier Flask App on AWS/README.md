@@ -1,9 +1,5 @@
 # My DevOps Project: Building a CI/CD Pipeline for a 2-Tier Flask App on AWS
 
-**Author:** Prashant Gohel
-**Date:** August 23, 2025
-
----
 
 ### **Table of Contents**
 1. [My Project's Goal](#1-my-projects-goal)
