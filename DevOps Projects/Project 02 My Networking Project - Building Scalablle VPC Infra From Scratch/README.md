@@ -1,10 +1,5 @@
 # My AWS Networking Project: Building a Scalable VPC Infrastructure from Scratch
 
-**Author:** Prashant Gohel
-**Date:** September 9, 2025
-
----
-
 ### **Table of Contents**
 1. [My Project's Goal](#1-my-projects-goal)
 2. [Core Concepts: The "What & Why"](#2-core-concepts-the-what--why)
