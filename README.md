@@ -29,11 +29,10 @@ A curated collection of my work and learnings in DevOps and Cloud Computing. Thi
 ### 📊 My GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=heetpatel28&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Heet's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=heetpatel28&layout=compact&theme=tokyonight&hide_border=true" alt="Heet's Top Languages" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=heetpatel28&theme=tokyonight&hide_border=true" alt="Heet's Streak" />
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=heetpatel28&layout=compact&theme=tokyonight&hide_border=true&card_width=320" alt="Heet's Top Languages" />
 </p>
-
----
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=336699&height=100&section=footer&text=Repository%20Map&fontSize=35&fontColor=ffffff" alt="Repository Map Banner"/>
