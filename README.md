@@ -30,13 +30,21 @@ A curated collection of my work and learnings in DevOps and Cloud Computing. Thi
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=heetpatel28&theme=tokyonight&hide_border=true" alt="Heet's Streak" />
-  
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=heetpatel28&layout=compact&theme=tokyonight&hide_border=true&langs_count=10&v=finalfix" alt="Heet's Top Languages" />
+</p>
+
+<p align="center">
+  <b>Top Languages Used:</b><br/>
+  <img src="https://img.shields.io/badge/Shell_Script-48%25-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-39%25-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-8.4%25-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/HCL-2.5%25-5C4EE5?style=for-the-badge&logo=terraform&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dockerfile-1.6%25-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=336699&height=100&section=footer&text=Repository%20Map&fontSize=35&fontColor=ffffff" alt="Repository Map Banner"/>
 </p>
+
 ## 🗺️ Repository Structure
 
 This repository is organized by topic for easy navigation. Below is a guide to what you'll find in each directory.
